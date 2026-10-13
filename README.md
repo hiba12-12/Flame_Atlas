@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔥 Flame Atlas
 
-## Getting Started
+**Explore wildfire activity through an interactive, data-focused web experience.**
 
-First, run the development server:
+Flame Atlas is a web application developed as part of a **NASA Space Apps Challenge** project. It aims to make wildfire-related information easier to explore, compare, and understand through a clear, accessible interface.
+
+> **Project status:** Frontend implementation (V8). Data integrations and analysis capabilities should be verified against the deployed application before being described as live features.
+
+## 🌍 Project Overview
+
+Wildfires affect ecosystems, communities, and air quality. Understanding wildfire patterns requires bringing complex information into a format that people can navigate and interpret.
+
+Flame Atlas focuses on an approachable interface for exploring wildfire-related information, comparing areas, and asking questions within a unified web experience.
+
+## ✨ Application Pages
+
+| Route | Page | Purpose |
+| --- | --- | --- |
+| `/` | Home | Introduces Flame Atlas and provides entry points to the experience. |
+| `/explorer` | Explorer | Interface for exploring wildfire-related information. |
+| `/ranker` | Ranker | Interface for viewing and comparing ranked results. |
+| `/ask` | Ask | Question-oriented interface for wildfire-related exploration. |
+
+
+
+## 🛠️ Technology Stack
+
+- **Next.js 16** — React-based web application framework
+- **React** — Component-based user interfaces
+- **TypeScript / JavaScript** — Application development (depending on source files)
+- **CSS** — Styling and responsive layout
+- **Node.js and npm** — Local development and package management
+
+For the exact dependency list and versions, see [`package.json`](./package.json).
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Install a Node.js version supported by the project's Next.js version (Next.js 16 requires **Node.js 20.9 or later**) and npm.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/hiba12-12/flame_atlas.git
+   cd flame_atlas
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open **http://localhost:3000** in your browser.
+
+### Production Build
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
+npm run start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> If the application uses environment variables or external APIs, configure them according to the implementation before running it. Never commit API keys or `.env` secrets.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+flame_atlas/
+├── public/                 # Public images and static assets
+├── src/
+│   ├── app/                # Next.js App Router pages and global styles
+│   │   ├── page.*          # Home route (/)
+│   │   ├── explorer/       # Explorer route (/explorer)
+│   │   ├── ranker/         # Ranker route (/ranker)
+│   │   └── ask/            # Ask route (/ask)
+│   └── components/         # Reusable UI components
+├── package.json            # Scripts and dependencies
+├── next.config.ts          # Next.js configuration
+└── README.md               # Project documentation
+```
 
-## Learn More
+*This is a simplified structural overview; individual filenames and additional directories may vary.*
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Project Goals
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Present wildfire-related information in a user-friendly interface.
+- Support exploration and comparison of wildfire-related data.
+- Help users navigate complex environmental information.
+- Provide a foundation for future integration with trustworthy Earth-observation datasets and analytical services.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛰️ Data Sources and Integrations
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🤝 Team and Contributions
+
+Developed collaboratively for the NASA Space Apps Challenge.
+
+**Repository:** [hiba12-12/flame_atlas](https://github.com/hiba12-12/flame_atlas)
+
+
+## 📌 Future Improvements
+
+
+---
+
+**Flame Atlas** — Making wildfire information easier to explore.
